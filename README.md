@@ -8,3 +8,4 @@ Gets keyword matching results using TF-IDF
 Combines them, removes duplicates, and returns the top N
 
 The load_data function reads the anime dataset from a CSV file, ensuring that required columns (anime, anime_img, episodes, rate) exist. It also handles missing values by filling episodes with 0 (as integers) and rate with 0.0 (as floats) to maintain data consistency.
+The create_enhanced_descriptions function generates detailed descriptions for each anime by combining its name, number of episodes, rating, and genres into a single string. This enriched text representation helps improve the effectiveness of search and recommendation models.
