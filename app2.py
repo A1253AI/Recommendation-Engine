@@ -40,8 +40,8 @@ def load_data():
             raise ValueError(f"Missing column: {col}")
 
     # Clean data
-   # df.iloc[:, EPISODES_COL_IDX] = df.iloc[:, EPISODES_COL_IDX].fillna(0).astype(int)
-   #df.iloc[:, RATING_COL_IDX] = df.iloc[:, RATING_COL_IDX].fillna(0).astype(float)
+   df.iloc[:, EPISODES_COL_IDX] = df.iloc[:, EPISODES_COL_IDX].fillna(0).astype(int)
+   df.iloc[:, RATING_COL_IDX] = df.iloc[:, RATING_COL_IDX].fillna(0).astype(float)
     
     return df
 
