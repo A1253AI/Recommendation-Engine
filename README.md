@@ -66,19 +66,10 @@ Compute cosine similarity between query & dataset.
 Retrieve top matches.
 
 Combine results from FAISS (weighted 60%) and TF-IDF (weighted 40%).
-Remove duplicates, keeping the highest score.
+Removes duplicates and keeps the highest score.
 
 Remove anime that don’t meet numeric conditions (e.g., "rate > 8.5").
-Return Final Recommendations
 
-return filtered_results.nlargest(top_n, 'score')
-Sort by final scores.
-Return top N most relevant anime.
-recommend_anime("fantasy anime with rate above 8.0 and less than 30 episodes")
-
-
-Finds fantasy anime using FAISS & TF-IDF.
-Filters out results where rate < 8.0 or episodes > 30.
 Returns the best-matching anime.
 Result: Highly relevant, personalized anime recommendations!
 
