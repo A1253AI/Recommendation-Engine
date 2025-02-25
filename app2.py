@@ -11,7 +11,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 ANIME_NAME_COL = "anime"
 IMAGE_COL = "anime_img"
 EPISODES_COL = "episodes"
-RATE_COL = "rate"  # Updated from "rating" to "rate"
+RATE_COL = "rate" 
 GENRE_START_COL_IDX = 5
 
 # Load data
@@ -20,7 +20,7 @@ def load_data():
     file_path = r"C:\Users\user\Desktop\recommdender_system\anime.csv"
     df = pd.read_csv(file_path, encoding="utf-8")
     
-    # Ensure required columns exist
+    # check required columns exist
     required_cols = [ANIME_NAME_COL, IMAGE_COL, EPISODES_COL, RATE_COL]
     missing_cols = [col for col in required_cols if col not in df.columns]
     if missing_cols:
